@@ -7,7 +7,7 @@ type CardProject = {
 
 export function CardProject({ project }: CardProject) {
    return (
-      <div className='p-7 m-4 rounded-2xl bg-gray flex flex-col'>
+      <div className='p-7 m-4 rounded-2xl bg-gray-custom flex flex-col'>
          <h1 className='text-[20px] font-bold mb-5'>{project.title}</h1>
          <Image
             src={project.img}
@@ -16,7 +16,9 @@ export function CardProject({ project }: CardProject) {
             alt=''
             className='self-center w-full'
          />
-         <p className='mt-5 w-full tracking-tight'>{project.description}</p>
+         <p className='mt-5 w-full tracking-tight border-t-[1px] border-b-[1px] py-3 border-gray-500'>
+            {project.description}
+         </p>
          <ul className='flex flex-wrap gap-3 mt-6'>
             {project.stacks.map((stack) => (
                <li
