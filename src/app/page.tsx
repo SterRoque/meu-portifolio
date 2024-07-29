@@ -80,7 +80,7 @@ export default function Home() {
             <h1 className='font-bold text-2xl'>Sterphane Roque</h1>
          </div>
 
-         <div className='mt-10 mx-4 flex flex-col gap-4 bg-gray rounded-xl p-7'>
+         <div className='mt-10 mx-4 flex flex-col gap-4 bg-gray-custom rounded-xl p-7'>
             <h3 className='font-semibold text-lg text-primary'>Sobre mim</h3>
             <p className='text-lg text-gray-300 tracking-tighter text-justify border-t-[1px] border-b-[1px] py-3 border-gray-400'>
                {textToShow}
@@ -106,7 +106,7 @@ export default function Home() {
          </div>
 
          <div>
-            <nav className='flex gap-3 overflow-x-scroll md:overflow-hidden'>
+            <nav className='flex gap-3 overflow-x-scroll md:overflow-hidden mt-7 mb-7'>
                {menuItems.map((item, index) => (
                   <a
                      key={item.title}
