@@ -19,7 +19,7 @@ export default function Home() {
          isActive: true,
       },
       {
-         component: NavSections.Formation,
+         component: NavSections.Formations,
          title: 'Formação',
          icon: <MdOutlineMailOutline className='text-2xl' />,
          isActive: false,
