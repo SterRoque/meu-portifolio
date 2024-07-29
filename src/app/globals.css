@@ -13,3 +13,11 @@ body {
    background: #282a36;
    color: #f8f8f2;
 }
+
+nav::-webkit-scrollbar {
+   display: none;
+}
+
+nav {
+   scrollbar-width: none;
+}
