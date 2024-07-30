@@ -1,11 +1,11 @@
 import { Contact } from './Contact';
-import { Experience } from './Experience';
+import { Experiences } from './Experiences';
 import { Formations } from './Formations';
 import { Projects } from './Projects';
 
 export const NavSections = {
    Projects,
    Formations,
-   Experience,
+   Experiences,
    Contact,
 };

@@ -25,7 +25,7 @@ export default function Home() {
          isActive: false,
       },
       {
-         component: NavSections.Experience,
+         component: NavSections.Experiences,
          title: 'Experiência',
          icon: <MdOutlineMailOutline className='text-2xl' />,
          isActive: false,
