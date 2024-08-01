@@ -8,6 +8,10 @@ import { useState } from 'react';
 import { GrLocation } from 'react-icons/gr';
 import { PiSuitcaseSimple } from 'react-icons/pi';
 import { NavSections } from '@/components/NavSections';
+import { FaCode } from 'react-icons/fa6';
+import { HiAcademicCap } from 'react-icons/hi2';
+import { AiFillTool } from 'react-icons/ai';
+import { IoMdContact } from 'react-icons/io';
 
 export default function Home() {
    const [expanded, setExpanded] = useState(false);
@@ -15,25 +19,25 @@ export default function Home() {
       {
          component: NavSections.Projects,
          title: 'Projetos',
-         icon: <MdOutlineMailOutline className='text-2xl' />,
+         icon: <FaCode className='text-2xl' />,
          isActive: true,
       },
       {
          component: NavSections.Formations,
          title: 'Formação',
-         icon: <MdOutlineMailOutline className='text-2xl' />,
+         icon: <HiAcademicCap className='text-2xl' />,
          isActive: false,
       },
       {
          component: NavSections.Experiences,
          title: 'Experiência',
-         icon: <MdOutlineMailOutline className='text-2xl' />,
+         icon: <AiFillTool className='text-2xl' />,
          isActive: false,
       },
       {
          component: NavSections.Contact,
          title: 'Contato',
-         icon: <MdOutlineMailOutline className='text-2xl' />,
+         icon: <IoMdContact className='text-2xl' />,
          isActive: false,
       },
    ]);
@@ -105,7 +109,7 @@ export default function Home() {
             </span>
          </div>
 
-         <div>
+         <div className='mx-1'>
             <nav className='flex gap-3 overflow-x-scroll md:overflow-hidden mt-7 mb-7'>
                {menuItems.map((item, index) => (
                   <a
