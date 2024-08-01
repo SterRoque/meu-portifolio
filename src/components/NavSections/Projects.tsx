@@ -4,7 +4,7 @@ import { CardProject } from '../CardProject';
 
 export function Projects() {
    return (
-      <div>
+      <div className='md:grid md:grid-cols-2 md:gap-4'>
          {projects.map((project) => (
             <CardProject
                key={project.title}

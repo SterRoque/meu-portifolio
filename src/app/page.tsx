@@ -71,62 +71,66 @@ export default function Home() {
    }
 
    return (
-      <main className='flex flex-col'>
-         <div className='flex flex-col text-center w-full items-center'>
-            <Image
-               src='https://github.com/Sterzinha.png'
-               width={200}
-               height={200}
-               alt='Sterphane Roque'
-               className='w-32 rounded-3xl flex self-center border-[#BD93F9] border-4 mb-3'
-            />
-            <h3 className='text-sm text-[#50FA7B]'>Desenvolvedora Front-End</h3>
-            <h1 className='font-bold text-2xl'>Sterphane Roque</h1>
-         </div>
+      <main className='flex flex-col md:w-full md:items-center py-8'>
+         <div className='md:max-w-screen-md '>
+            <div className='flex flex-col text-center w-full items-center'>
+               <Image
+                  src='https://github.com/Sterzinha.png'
+                  width={200}
+                  height={200}
+                  alt='Sterphane Roque'
+                  className='w-32 rounded-3xl flex self-center border-[#BD93F9] border-4 mb-3'
+               />
+               <h3 className='text-sm text-[#50FA7B]'>
+                  Desenvolvedora Front-End
+               </h3>
+               <h1 className='font-bold text-2xl'>Sterphane Roque</h1>
+            </div>
 
-         <div className='mt-10 mx-4 flex flex-col gap-4 bg-gray-custom rounded-xl p-7'>
-            <h3 className='font-semibold text-lg text-primary'>Sobre mim</h3>
-            <p className='text-lg text-gray-300 tracking-tighter text-justify border-t-[1px] border-b-[1px] py-3 border-gray-400'>
-               {textToShow}
+            <div className='mt-10 mx-4 flex flex-col gap-4 bg-gray-custom rounded-xl p-7'>
+               <h3 className='font-semibold text-lg text-primary'>Sobre mim</h3>
+               <p className='text-base text-gray-300 tracking-tighter text-justify border-t-[1px] border-b-[1px] py-3 border-gray-400'>
+                  {textToShow}
 
-               {text.length > limit && (
-                  <button
-                     onClick={toggleText}
-                     className='text-primary'>
-                     {expanded ? 'Ler menos' : 'Ler mais'}
-                  </button>
-               )}
-            </p>
-            <span className='flex gap-2 items-center text-sm'>
-               {' '}
-               <GrLocation fontSize={20} />
-               Wenceslau Braz, Paraná, Brasil
-            </span>
-            <span className='flex gap-2 items-center text-sm'>
-               {' '}
-               <PiSuitcaseSimple fontSize={20} />
-               Desenvolvedora Front-End
-            </span>
-         </div>
+                  {text.length > limit && (
+                     <button
+                        onClick={toggleText}
+                        className='text-primary'>
+                        {expanded ? 'Ler menos' : 'Ler mais'}
+                     </button>
+                  )}
+               </p>
+               <span className='flex gap-2 items-center text-sm'>
+                  {' '}
+                  <GrLocation fontSize={20} />
+                  Wenceslau Braz, Paraná, Brasil
+               </span>
+               <span className='flex gap-2 items-center text-sm'>
+                  {' '}
+                  <PiSuitcaseSimple fontSize={20} />
+                  Desenvolvedora Front-End
+               </span>
+            </div>
 
-         <div className='mx-1'>
-            <nav className='flex gap-3 overflow-x-scroll md:overflow-hidden mt-7 mb-7'>
-               {menuItems.map((item, index) => (
-                  <a
-                     key={item.title}
-                     className={`cursor-pointer flex gap-1 items-center text-sm active:text-primary uppercase ${
-                        item.isActive
-                           ? 'border-b-2 border-primary text-primary py-2'
-                           : 'none'
-                     }`}
-                     onClick={() => handleNavigateToSection(index)}>
-                     {item.icon}
-                     {item.title}
-                  </a>
-               ))}
-            </nav>
+            <div className='mx-1 md:mx-4 flex flex-col'>
+               <nav className='flex gap-3 overflow-x-scroll md:overflow-hidden mt-7 mb-7 md:justify-between'>
+                  {menuItems.map((item, index) => (
+                     <a
+                        key={item.title}
+                        className={`cursor-pointer flex gap-1 items-center text-sm active:text-primary uppercase md:justify-center md:w-full hover:bg-gray-custom ${
+                           item.isActive
+                              ? 'border-b-2 border-primary text-primary py-2'
+                              : 'none'
+                        }`}
+                        onClick={() => handleNavigateToSection(index)}>
+                        {item.icon}
+                        {item.title}
+                     </a>
+                  ))}
+               </nav>
+               <CurrentActiveSection />
+            </div>
          </div>
-         <CurrentActiveSection />
       </main>
    );
 }
