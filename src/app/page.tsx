@@ -73,7 +73,7 @@ export default function Home() {
          <div className='md:max-w-screen-md '>
             <div className='flex flex-col text-center w-full items-center'>
                <Image
-                  src='https://github.com/Sterzinha.png'
+                  src='https://github.com/SterRoque.png'
                   width={200}
                   height={200}
                   alt='Sterphane Roque'
