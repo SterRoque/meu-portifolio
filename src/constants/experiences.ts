@@ -1,6 +1,6 @@
 export const experiences = [
    {
-      name: 'Leader Medea',
+      name: 'Leader Media',
       role: 'Desenvolvedora Front-End',
       start: '01/01/2024',
       end: 'atual',
