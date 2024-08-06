@@ -33,6 +33,14 @@ export const stacks = [
       stack: 'Node.js',
       icon: '/icons/node.png',
    },
+   {
+      stack: 'Fastify.js',
+      icon: '/icons/fastify.png',
+   },
+   {
+      stack: 'Express.js',
+      icon: '/icons/express.png',
+   },
 
    {
       stack: 'Astro.js',

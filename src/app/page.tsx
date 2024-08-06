@@ -1,8 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import { MdOutlineMailOutline } from 'react-icons/md';
-import { FaWhatsapp } from 'react-icons/fa';
 import { truncateText } from '@/utils/truncate-text';
 import { useState } from 'react';
 import { GrLocation } from 'react-icons/gr';
