@@ -19,7 +19,8 @@ export const projects = [
       img: '/imgs/redepet-app.png',
       description:
          'RedePet é o aplicativo ideal para garantir a segurança dos seus pets. Com ele, você pode cadastrar seus animais e rastreá-los em tempo real usando o QR code na coleira. Sempre que o QR code for escaneado, você receberá uma notificação com a localização exata do seu pet, proporcionando tranquilidade e proteção para seu amigo de quatro patas. \n\n Lançamento em breve!!',
-      urlSite: '',
+      urlSite:
+         'https://play.google.com/store/apps/details?id=app.redepet.localiza',
       urlGithub: '',
       stacks: [
          'React Native',
