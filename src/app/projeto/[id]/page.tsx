@@ -43,7 +43,7 @@ export default function Project({ params }: ProjectPageProps) {
 
          <Swiper
             onSlideChange={(swiper) => onSwiperChange(swiper)}
-            modules={[Navigation, Pagination, A11y, Autoplay]}
+            modules={[Navigation, Pagination, Autoplay]}
             autoplay={{
                delay: 8000,
                disableOnInteraction: false,

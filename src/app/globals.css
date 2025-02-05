@@ -21,3 +21,7 @@ nav::-webkit-scrollbar {
 nav {
    scrollbar-width: none;
 }
+
+.swiper-pagination-bullet-active {
+   background-color: #c084fc !important;
+}
