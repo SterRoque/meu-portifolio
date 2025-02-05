@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { FaGithub } from 'react-icons/fa';
 import { IoGlobeOutline } from 'react-icons/io5';
 import { LinkTag } from './LinkTag';
+import Link from 'next/link';
 
 type CardProject = {
    project: IProject;
@@ -47,6 +48,12 @@ export function CardProject({ project }: CardProject) {
                />
             </LinkTag>
          </div>
+
+         <Link
+            href={`/projeto/${project.id}`}
+            className='bg-gray-600 rounded-lg text-center h-10 flex justify-center items-center mt-5 hover:scale-105 transition-all border border-gray-800'>
+            Ver mais sobre o projeto
+         </Link>
          <ul className='flex flex-wrap gap-3 mt-6'>
             {project.stacks.map((stack) => (
                <li
