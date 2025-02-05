@@ -7,7 +7,7 @@ export function Projects() {
       <div className='md:grid md:grid-cols-2 md:gap-4'>
          {projects.map((project) => (
             <CardProject
-               key={project.title}
+               key={project.id}
                project={project}
             />
          ))}
